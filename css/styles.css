@@ -1,0 +1,35 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+        .list-card {
+            transition: all 0.3s ease;
+        }
+        .list-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .chapter-btn {
+            transition: all 0.2s ease;
+        }
+        .chapter-btn.read {
+            background-color: #22c55e;
+            color: white;
+            border-color: #16a34a;
+        }
+        .chapter-btn.next-up {
+            background-color: #f59e0b;
+            color: white;
+            border-color: #d97706;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .7;
+            }
+        }
+        .progress-bar-fill {
+            transition: width 0.5s ease-out;
+        }
